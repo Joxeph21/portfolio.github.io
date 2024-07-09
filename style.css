@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--bg);
+    color: var(--primarycolor);
+}
+
+.datentime p{
+    font-size: 12px;
+    color: var(--action);
+}
+
+header{
+    padding: 0px 50px;
+    width: 100%;
+    display: flex;
+    z-index: 9;
+    height: 80px;
+    background: var(--bg);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.fa-bars{
+    display: none;
+}
+.navctrl{
+    fill: var(--primarycolor);
+    width: 20px;
+    height: 20px;
+}
+.logo{
+    width: max-content;
+}
+.logo h2 > span{
+    color: var(--action);
+    position: relative;
+    width: 100px;
+}
+ nav > ul{
+    width: 100%;
+    display: flex;
+}
+ ul > li{
+    list-style-type: none;
+    margin: 0 30px;
+}
+ul > li > a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+a:hover{
+    color: var(--action);
+}
+.active{
+    color: var(--action);
+}
+main{
+    width: dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+main h1, main p, main sub{
+    margin: 12px 0;
+}
+table strong{
+    color: var(--action);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+main h1{
+    font-family: 'Urbanist-semibold';
+    font-size: 45px;
+    margin: 12px 0;
+    letter-spacing: 4px;
+}
+main > figure{
+    width: 420px;
+    /* padding: 10px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* background: #212121; */
+    height: 432px;
+    overflow: hidden;
+}
+sub{
+    font-family: 'Poppins-semibold';
+    font-size: 18px;
+    color: var(--secondarycolor);
+}
+main article p{
+    font-size: 35px;
+}
+main article button{
+    background: var(--action);
+    margin: 30px 0;
+    margin-right: 30px;
+}
+main article button:last-child{
+    background: none;
+    border: 2px solid var(--action);
+    color: var(--action);
+}
+.section-green{
+    background: var(--bg-section2);
+    height: 600px;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+.section-green h1{
+    font-family: 'Urbanist-extra';
+     font-size: 3.7em;
+     margin-top: 120px;
+}
+section aside{
+    align-self: flex-start;
+    color: #0c10125f;
+    margin: 0;
+    justify-self: flex-start;
+}
+section article{
+    width: max-content;
+    margin-top: 20px;
+    height: 535px;
+}
+section article p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    width: 596px;
+    margin: 25px 0;
+    color: var(--bg);
+}
+.section-black{
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1000px;
+}
+.section-black aside{
+    width: 100%;
+    height: max-content;
+    margin: 50px 0;
+}
+.section-black h1{
+    font-family: "Poppins-extra";
+    color: var(--primarycolor);
+    font-size: 3em;
+}
+.section-black article{
+    margin: 0;
+    width: 100%;
+    height: 460px;
+    align-self: flex-start;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    column-span: span 2;
+    height: max-content;
+    border-top: 2px solid gray;
+}
+.social-icons svg{
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+   fill: gray;
+   transition: .1s linear;
+   cursor: pointer;
+}
+.social-icons svg:hover{
+    fill: var(--primarycolor);
+}
+
+footer {
+    width: 100%;
+    border-top: 15px solid var(--action);
+    padding-top:20px ;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2) {
+    grid-column: span 1;
+}
+
+footer div:nth-child(3) {
+    grid-column: span 2;
+}
+.reserved{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px;
+    display: grid;
+    height: 60px;
+}
+.reserved p{
+    margin: 2px 0;
+    padding: 0;
+    font-size: 12px;
+    color: gray;
+}
+.links{
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    justify-content: flex-end;
+}
+.links ul li a{
+    font-size: 14px;
+}
+.social-icons svg{
+    margin: 10px 015px;
+}

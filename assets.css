@@ -1,0 +1,330 @@
+:root{
+    --bg: #0c1012;
+--primarycolor: #e2ebeb;
+--secondarycolor: #7a999c;
+--action: #b4e105;
+--bg-section : linear-gradient(120deg, #b4e105 50%, #627B03 100%);
+--bg-section2 : linear-gradient(190deg, #b4e105 50%, #627B03 100%);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:var(--action);
+  }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-extra';
+    src: url('fonts/Poppins-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url('fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Poppins-semibold';
+    src: url('fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Urbanist';
+    src: url('fonts/Urbanist-Regular.ttf');
+}
+@font-face {
+    font-family: 'Urbanist-semibold';
+    src: url('fonts/Urbanist-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Urbanist-extra';
+    src: url('fonts/Urbanist-ExtraBold.ttf');
+}
+
+h1{
+    text-transform: uppercase;
+}
+p, a{
+    color: var(--secondarycolor);
+    font-size: 16px;
+}
+button{
+    height: 50px;
+    font-family: 'Poppins-medium';
+    font-size: 12px;
+    border-radius: 3px;
+    width: 181px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+section{
+    width: 100%;
+    height: 752px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+@media  screen and  (min-width:1024px){
+    .projects article{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    }
+    .big-screen{
+        display: block;
+    }
+    .mobile-screen{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    header nav{
+        display: none;
+    }
+    header{
+        width: 100vw;
+    }
+  
+    .side-nav{
+        width: 80vw;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+       height: 100vh;
+        background: var(--bg);    
+    }
+    .side-nav-overlay{
+        background: rgba(0, 0, 0, 0.539);
+        display: none;
+       width: 100vw;
+        position: fixed;
+        z-index: 9;
+        height: 100vh;
+        transition: .5s ease-in-out;
+        animation: slidein .1s linear ;
+    }
+    @keyframes slidein {
+        0%{
+            left: -60px;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .fa-times{
+   position: relative;
+   align-self: flex-end;
+   margin-right: 40px;
+   justify-self: flex-start;
+    }
+    .side-nav nav ul {
+        width: 200px;
+        z-index: 9;
+        align-items: center;
+        height: 400px;
+        flex-direction: column;
+    }
+    .side-nav li{
+        margin-top: 20px;
+    }
+    .fa-bars{
+        display: block;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    main > article{
+        margin: 30px 0;
+        align-self: center;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    main > figure{
+        width: 300px;
+        padding: 10px;
+        height: 300px;
+    }
+    main article h1{
+        font-size: 1.5em;
+        margin: 12px 0;
+        font-family: 'Urbanist-semibold';
+        letter-spacing: 4px;
+    
+    }
+    main article p{
+        margin: 8px;
+  text-align: center;
+        font-size: 18px;
+    }
+    sub{
+        margin: 8px;
+        font-size: 14px;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    #about{
+        justify-content: center;
+        padding: 0;
+    }
+    #about article{
+        justify-content: center;
+    }
+    .section-green{
+        background: var(--bg-section);
+        height: 950px;
+        justify-content: flex-start;
+
+    }
+    section h1{
+        font-family: 'Urbanist-extra';
+        
+        position: relative;
+    }
+    section article p{
+        color: var(--bg);
+        font-size: 12px;
+    }
+    .section-green aside{
+        width: 100%;
+        margin:  0;
+        height: max-content;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+    }
+    .section-green aside h1{
+        color: #0c10125f;
+        margin: 10px;
+        font-size: 3em;
+    }
+    table{
+        font-size: 12px;
+
+    }
+    .section-green article {
+      width: 100%;
+      height: max-content;
+        padding: 30px;
+    }
+    .section-green p{
+        font-size: 12px;
+        width:100%;
+        padding: 0 20px;
+    }
+    .section-black h1{
+        font-size: 2.3em;
+    }
+    .section-black aside{
+        padding: 10px;
+    }
+    .goals{
+        height: max-content;
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .goals article{
+        height: max-content;
+        width: 100%;
+        padding: 0;
+    }
+    .goals td{
+        font-size: 12px;
+    }
+    footer {
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+footer .links{
+    align-items: center;
+    justify-content: center;
+}
+    footer .links ul{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    footer .links ul li a{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    footer .links ul li {
+      
+        margin: 0 5px;
+        padding: 0;
+    }
+    
+    footer div:nth-child(1){
+        grid-column: span 2;
+    }
+    footer div:nth-child(2) {
+        grid-column: span 2;
+    }
+    
+    footer div:nth-child(3) {
+        grid-column: span 2;
+    }
+    
+}
+/* Tablet view */
+
+@media  screen and (min-width:767px) and (max-width:1023px) {
+        
+    header nav a{
+        font-size: 14px;
+    }
+    .side-nav-overlay{
+        display: none;
+    }
+
+    .section-green{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        flex-direction: column-reverse;
+    }
+    .section-green aside h1{
+        text-align: center;
+        position: relative;
+        margin: 0;
+    }
+    .section-green aside{
+        margin: 20px 0;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .section-black{
+        height: 1500px;
+    }
+}
+
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph Adenugba</title>
+
+    <!--Css styling-->
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="logo">
+        <h2>J<span>A.</span></h2>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li class="links">
+            <a href="#home" class="active" onclick="toggleActive(this)">Home</a>
+          </li>
+          <li class="links">
+            <a href="#about" onclick="toggleActive(this)">About</a>
+          </li>
+          <li class="links">
+            <a href="#techgoals" onclick="toggleActive(this)">Goals</a>
+          </li>
+          <li class="links">
+            <a href="#contact" onclick="toggleActive(this)">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <i class="fas fa-bars" onclick="handleNavOpen()"></i> -->
+      <svg
+        class="navctrl fa-bars"
+        onclick="handleNavOpen()"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+        <path
+          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+        />
+      </svg>
+    </header>
+
+    <div class="side-nav-overlay" id="sidenav">
+      <aside class="side-nav">
+        <!-- <i class="fas fa-times" onclick="handleNavClose()"></i> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="navctrl fa-times"
+          onclick="handleNavClose()"
+          viewBox="0 0 352 512"
+        >
+          <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          />
+        </svg>
+        <nav>
+          <ul>
+            <li class="links">
+              <a href="#home" class="active" onclick="toggleActive(this)"
+                >Home</a
+              >
+            </li>
+            <li class="links">
+              <a href="#about" onclick="toggleActive(this)">About</a>
+            </li>
+            <li class="links">
+              <a href="#techgoals" onclick="toggleActive(this)">Goals</a>
+            </li>
+            <li class="links">
+              <a href="#contact" onclick="toggleActive(this)">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+    <main id="home">
+      <article>
+        <p>Hey, I'm</p>
+        <h1 data-testid="stackDisplayName">Joseph</h1>
+        <sub>Frontend Engineer</sub>
+
+        <div class="datentime">
+          <p data-testid="currentDay"></p>
+          <p data-testid="currentTimeUTC"></p>
+        </div>
+      </article>
+
+      <figure>
+        <img
+          data-testid="slackProfilePicture"
+          src="images/slack-profile-pic 300x300.jpg"
+          alt="slack-profile-pic"
+        />
+      </figure>
+    </main>
+
+    <!--About section-->
+    <section class="section-green" id="about">
+      <article>
+        <p>
+          I’m <strong>Joseph Adenugba</strong>, a dedicated React and frontend
+          developer with over 4 years of experience. My passion lies in creating
+          seamless user experiences through coding and innovative design.
+        </p>
+        <p>
+          <strong> About Me:</strong> I thrive on turning concepts into tangible
+          digital experiences. My toolbox includes HTML, CSS, JavaScript, and a
+          dash of creativity. When I’m not immersed in code, you’ll find me
+          exploring new design trends or optimizing performance.
+        </p>
+        <p>
+          <strong> Collaboration and Connection:</strong> I’m not just a
+          developer; I’m a collaborator. Let’s chat about your next project!
+          Whether it’s brainstorming ideas, fine-tuning details, or diving into
+          the nitty-gritty of implementation, I’m here. Reach out anytime—I’m
+          always ready to connect and contribute.
+        </p>
+        <p>
+          <strong>Your Dream Website Awaits:</strong> Together, we’ll breathe
+          life into your vision. From pixel-perfect layouts to smooth
+          interactions, let’s create something remarkable. Whether it’s a sleek
+          portfolio, an e-commerce platform, or a cutting-edge app, count me in.
+        </p>
+      </article>
+      <aside>
+        <h1>About</h1>
+      </aside>
+    </section>
+
+    <!--Services section-->
+    <section class="section-black goals" id="techgoals">
+      <aside>
+        <h1>TECH GOALS</h1>
+        <sub>Here are the goals i hope to achieve over the next 2 years</sub>
+      </aside>
+      <article>
+        <table>
+          <tr>
+            <th>Goals</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>
+              <h4>1.</h4>
+              Mastering the Basic Frontend languages
+            </td>
+            <td>
+              One of my biggest goal is to establish a strong set of
+              fundamentals in the basics frontend languages:
+              <strong> HTML, CSS, and JavaScript </strong>.This knowledge will
+              not only make me better at my skill set but also make me better at
+              producing sleek and effective web pages.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>2.</h4>
+              Learn new Frameworks or Library
+            </td>
+            <td>
+              Presently, I am learning <strong>React</strong>, and i promise to
+              fully master it. By becoming proficient in these technologies, I
+              want to make the development process easier to handle and create
+              web applications that have impressive performance and dynamism.
+              The relevant skills will not only assist me in putting forward the
+              best engineering decisions but also facilitate me in contributing
+              more appropriately to modern, powerful projects.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>3.</h4>
+              Masteer Responsive Design
+            </td>
+            <td>
+              I also aim to master media queries, Flexbox, and CSS Grid for
+              creating responsive layouts by the time of the couple years ahead
+              of us. The advanced CSS techniques are precious web design
+              resources for who wants to be able to design pages with the
+              capability to adapt with different screen sizes and devices.
+              Refining my knowledge and skills in these areas, I can be sure
+              that my designs are full of flexibility and aesthetic, which also
+              brings out the best of the web life.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>4.</h4>
+              Build Real Projects
+            </td>
+            <td>
+              A key goal for me over the next two years is to create a
+              comprehensive personal portfolio and develop practical
+              applications. Building a portfolio will allow me to showcase my
+              skills, projects, and growth as a frontend developer. It will
+              serve as a tangible representation of my capabilities and
+              creativity. Additionally, working on practical applications will
+              provide hands-on experience and demonstrate my ability to solve
+              real-world problems. This combination will not only enhance my
+              professional profile but also open up new opportunities in my
+              career.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>5.</h4>
+              Be good enough to contribute to Open Source
+            </td>
+            <td>
+              I want to get good enough to participate in open-source projects
+              and give back to the community. Working on open-source projects
+              will let me collaborate with other talented developers and learn
+              from them while contributing to projects that matter. By sharing
+              what I know and helping out, I can make a positive impact on the
+              tools and resources we all use. This goal is about growing as a
+              developer and being part of a supportive, collaborative community.
+            </td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <!--Footer-->
+    <footer id="contact">
+      <div class="reserved">
+        <p data-testid="slackEmail">adenugbaoluwalayomi2019@gmail.com</p>
+        <p data-testid="slackPhone">+234-903-690-9765</p>
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+          </li>
+          <li>
+            <a href="https://keyword.dog" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+              >Scrape Any Web</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <svg
+          onclick="window.open('https://github.com/Joxeph21', '_blank')"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          width="64px"
+          height="64px"
+          role="link"
+          aria-label="Vist Github Page"
+        >
+          <path
+            d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
+          />
+        </svg>
+        <?xml version="1.0"?>
+        <svg
+          onclick="window.open('https://www.linkedin.com/in/joseph-adenugba21/', '_blank')"
+          role="link"
+          aria-label="Vist LinkendIn Page"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          width="50px"
+          height="50px"
+        >
+          <path
+            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+          />
+        </svg>
+        <svg
+          aria-label="Visit Twitter"
+          role="link"
+          onclick="window.open('https://x.com/joeweb_dev', '_blank')"
+          fill="none"
+          height="2260"
+          width="2500"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0.254 0.25 500 451.95400000000006"
+        >
+          <path
+            d="M394.033.25h76.67L303.202 191.693l197.052 260.511h-154.29L225.118 294.205 86.844 452.204H10.127l179.16-204.77L.254.25H158.46l109.234 144.417zm-26.908 406.063h42.483L135.377 43.73h-45.59z"
+          />
+        </svg>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="fontawesome-free-5.15.4-web/js/all.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
